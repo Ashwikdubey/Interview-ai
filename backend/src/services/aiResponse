@@ -1,0 +1,26 @@
+{
+  candidate_name: 'Rahul Sharma',
+  job_position: 'Frontend Developer Intern',
+  company_name: 'TechNova Solutions',
+  interview_report_summary: "The candidate demonstrates a very strong technical foundation for an internship role, particularly within the React ecosystem. Having previously interned at TechNova Solutions, he is already familiar with the team's workflow and technologies, making him an ideal candidate for continued engagement or advanced projects.",
+  technical_skills_assessment: 'Rahul possesses a high degree of proficiency in React.js, JavaScript, and Tailwind CSS, which are the primary requirements for this role. His experience with the Gemini API and MERN stack indicates he can handle tasks beyond simple UI development, including API integration and state management. His solving of 400+ DSA problems suggests strong logic and problem-solving capabilities.',
+  behavioral_assessment: 'The candidate expresses self-motivation and a proactive learning mindset in his self-description. His participation in hackathons and project-based work shows a collaborative spirit and an ability to translate theoretical knowledge into functional applications.',
+  scores_out_of_10: 10,
+  technical_score: 9,
+  communication_score: 8,
+  problem_solving_score: 9,
+  cultural_fit_score: 9,
+  strengths: [
+    "Direct experience with the company's tech stack (React, Tailwind CSS)",
+    'Proven ability to build and deploy complex full-stack applications',
+    'Strong algorithmic background with 400+ DSA problems solved',
+    'Experience with modern AI API integration (Gemini)'
+  ],
+  weaknesses: [
+    'Currently a student, which may affect availability compared to a full-time hire',
+    'No specific mention of testing frameworks like Jest or Cypress',
+    'Relies heavily on hooks for state; could benefit from learning Redux or Zustand for larger scale applications'
+  ],
+  final_recommendation: 'Hire',
+  hiring_decision_rationale: 'Rahul is an exceptional fit for the Frontend Developer Intern position. He exceeds the basic requirements of HTML/CSS/JS and already has practical experience with the exact tech stack used by TechNova Solutions. His previous tenure at the company reduces onboarding time, and his project portfolio demonstrates a level of competence usually seen in entry-level full-stack developers rather than just interns.'
+}
