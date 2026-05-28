@@ -477,3 +477,105 @@ $severity-low: #3fb950;
         border-color: rgba($severity-low, 0.25);
     }
 }
+
+//responsive adjustments
+
+@media (max-width: 1200px) {
+    .interview-layout {
+        flex-direction: column;
+    }
+
+    .interview-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .interview-nav,
+    .interview-sidebar {
+        width: 100%;
+    }
+
+    .interview-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 1rem;
+    }
+
+    .interview-sidebar {
+        border-top: 1px solid $border-color;
+    }
+}
+
+@media (max-width: 768px) {
+    .interview-page {
+        padding: 0.75rem;
+    }
+
+    .interview-content {
+        padding: 1rem;
+        max-height: unset;
+        overflow-y: visible;
+    }
+
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .roadmap-day {
+        padding-left: 2.75rem;
+
+        &::before {
+            left: 14px;
+        }
+    }
+
+    .roadmap-list::before {
+        left: 20px;
+    }
+
+    .q-card {
+        &__header {
+            padding: 0.75rem;
+        }
+
+        &__body {
+            padding: 0.75rem;
+        }
+    }
+
+    .match-score {
+        &__ring {
+            width: 75px;
+            height: 75px;
+        }
+
+        &__value {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .interview-nav {
+        &__item {
+            font-size: 0.8rem;
+            padding: 0.55rem;
+        }
+    }
+
+    .interview-content {
+        padding: 0.75rem;
+    }
+
+    .content-header h2 {
+        font-size: 1rem;
+    }
+
+    .q-card {
+        &__question {
+            font-size: 0.85rem;
+        }
+    }
+}
