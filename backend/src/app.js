@@ -10,7 +10,7 @@ const interviewRouter=require("./routes/interview.route");
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"http://interview-ai-five-tau.vercel.app",
+    origin:"http://localhost:5173",
     credentials:true
 }))
 app.use("/api/auth",authRouter);
