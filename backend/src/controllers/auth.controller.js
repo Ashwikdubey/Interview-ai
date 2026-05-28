@@ -24,7 +24,11 @@ async function registerUserController(req,res){
         username:user.username
     },process.env.JWT_TOKEN,{expiresIn:"1d"})
 
-    res.cookie("token", token);
+    res.cookie("token", token,{
+        httpOnly:true,
+        secure:true,
+        sameSite:"none"
+    });
     res.status(201).json({
         message:"user registered successfully",
         user:{
@@ -46,7 +50,11 @@ async function loginUserController(req,res){
         username:user.username,
         id:user._id
     },process.env.JWT_TOKEN,{expiresIn:"1d"})
-    res.cookie("token",token);
+    res.cookie("token",token,{
+        httpOnly:true,
+        secure:true,
+        sameSite:"none"
+    });
     res.status(201).json({
         message:"user logged in successfully",
         user:{
