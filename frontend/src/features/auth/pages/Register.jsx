@@ -11,7 +11,7 @@ const Register = () =>{
   const[email,setemail] =useState("")
   const[password,setpassword] =useState("")
 
-  const {handleRegister,loading}=useAuth;
+  const {handleRegister,loading}=useAuth();
 
   const onSubmitHandler=async(e)=>{
     e.preventDefault();
